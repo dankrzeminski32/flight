@@ -2,21 +2,24 @@ package token
 
 type TokenType string
 
+const (
+	LPAR = "("
+	RPAR = ")"
+	LBRACKET = "["
+	RBRACKET = "]"
+	LBRACE = "{"
+	RBRACE = "}"
+	ASSIGN = "="
+	PLUS = "+"
+	FUNCTION = "FUNCTION"
+	ILLEGAL = "ILLEGAL"
+	INTEGER = "INT"
+	EOF = "EOF"
+	IDENT = "IDENT"
+	COMMA = ","
+)
+
 type Token struct {
 	Type TokenType
 	Literal string
 }
-
-const (
-	LPAR string = "("
-	RPAR string = ")"
-	LBRACKET string = "["
-	RBRACKET string = "]"
-	ASSIGN string = "="
-	PLUS string = "+"
-	FUNCTION string = "FUNCTION"
-	ILLEGAL string = "ILLEGAL"
-	INTEGER string = "INT"
-	EOF string = "EOF"
-	IDENT string = "IDENT"
-)
